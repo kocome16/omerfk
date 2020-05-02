@@ -3,14 +3,14 @@
 int main()
 {
 	const int size = 10;
-	int arr[size];
+	int arr[size]; // array 
 	int i,temp,j;
 	
 	for(i = 0;i < size;i++){
-		scanf("%d",&arr[i]);
+		scanf("%d",&arr[i]);  
 	}
-	for(i = 1;i < size;i++){		// i = 1  i < size
-		for(j = 0;j < size-i;j++){     // j = 0    j < size-i
+	for(i = 1;i < size;i++){		
+		for(j = 0;j < size-i;j++){    
 			if(arr[j] > arr[j+1]){
 				temp = arr[j];
 				arr[j] = arr[j+1];
